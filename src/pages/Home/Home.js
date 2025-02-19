@@ -108,7 +108,7 @@ const Home = () => {
               Sou um desenvolvedor Front-end apaixonado por tecnologia e programação, com experiência em React.js, NextJS, JavaScript
               e mais algumas skills que você poderá ver na sessão abaixo. Tenho conhecimento em metodologias ágeis, participando de
               projetos dinâmicos e colaborativos. Sou formado em Análise e Desenvolvimento de Sistemas e estou sempre em busca de
-              novos aprendizados para me manter atualizado com as tendências do mundo tech. 🚀
+              novos aprendizados para me manter atualizado com as tendências do mundo tech.
             </p>
           </div>
         </div>
