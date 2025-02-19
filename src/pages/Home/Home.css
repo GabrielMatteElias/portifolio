@@ -1,0 +1,491 @@
+.home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00000065;
+    width: 100%;
+    color: #fff;
+    backdrop-filter: saturate(1.8) blur(30px);
+    padding-bottom: 18rem;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.first-section {
+    text-align: left;
+
+    margin-top: 10rem;
+    letter-spacing: 0.8rem;
+
+    color: white;
+}
+
+.container-skills-inside {
+    border-radius: 50%;
+    /* Faz a div ficar redonda */
+    background-color: rgba(58, 55, 55, 0.788);
+
+    margin-top: 1rem;
+
+    height: 29rem;
+    width: 30rem;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-skills-inside:hover {
+    box-shadow: 0 -8px 5px rgba(228, 228, 228, 0.342);
+    /* Adiciona o brilho apenas na parte superior */
+    transition: 300ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+/*ABOUT */
+.about {
+    padding: 10rem 5rem;
+    text-align: center;
+
+    color: #fff;
+
+    font-size: 1.7rem;
+
+    font-weight: 700;
+}
+
+.sobre-mim-titulo {
+    font-size: clamp(2.5rem, 15vw, 4rem);
+    margin: 0 0 10px 0;
+}
+
+.sobre-mim-texto {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*SKILLS */
+.subcontainer-skills {
+    width: 100%;
+}
+
+.subcontainer-skills .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subcontainer-skills h3 {
+    font-size: 3.5rem;
+
+    color: white;
+}
+
+.subcontainer-skills-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.subcontainer-others-skills-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-left: 4rem;
+}
+
+.card-skills {
+    position: relative;
+    text-align: center;
+    background-color: #eceaea;
+    width: 12rem;
+    aspect-ratio: 1;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.8rem;
+    transition: 0.2s;
+}
+
+.card-skills img {
+    width: 4rem;
+}
+
+.card-skills p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.card-skills:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(rgba(184, 184, 185, 0.533) 0px 0px 20px);
+}
+
+.skills-secundarias {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.skills-secundarias h4 {
+    font-size: 2.5rem;
+}
+
+/*PROJECTS */
+.projects {
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.projects h3 {
+    font-size: 3.1rem;
+}
+
+
+.projects-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card-projects {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    background-size: cover;
+    background-position: center;
+    width: 40rem;
+    height: 20rem;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.card-projects::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.card-projects::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    bottom: 0.0rem;
+    background-image: linear-gradient(90deg, #8aa029 0%, #c1e207 92.32%);
+}
+
+
+.card-projects:hover {
+    transform: scale(1.1);
+    position: relative;
+    z-index: 200;
+}
+
+.projects-info {
+    position: absolute;
+    width: 100%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.projects-info > p {
+font-weight: bold;
+}
+
+
+.projects-icons{
+    display: flex;
+    justify-content: center;
+    gap: .7rem;
+}
+
+.p-1 {
+    background-image: url('../../img/clone-whatsapp-thumb.png');
+}
+
+.p-2 {
+    background-image: url('../../img/yugioh-thumb.png');
+}
+
+.p-3 {
+    background-image: url('../../img/busca-cep-thumb.png');
+}
+
+.p-4 {
+    background-image: url('../../img/gerenciador-financeiro.png');
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    z-index: 999;
+}
+
+.modal-info-project {
+    /* Ocultar o modal por padrão */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    z-index: 1000;
+    width: 75%;
+    height: 60%;
+    padding: 2rem;
+}
+
+.modal-close-icon {
+    display: flex;
+    align-items: self-end;
+    flex-direction: column;
+}
+
+.modal-close-icon svg {
+    width: 2rem;
+}
+
+.icon-close-modal:hover {
+    fill: rgba(0, 0, 0, 0.705);
+    cursor: pointer;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 5rem;
+}
+
+.modal-title {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.modal-title h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    color: #c1e207;
+}
+
+.modal-video-buttons {
+    padding: 2rem 0 0 2rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.modal-video video {
+    width: 550px;
+}
+
+.modal-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.modal-description p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #828282;
+    line-height: 140%;
+}
+
+.modal-description span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #c1e207;
+}
+
+.link-project {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    background-image: linear-gradient(90deg, #c5db44 .2%, #c1e207 100%);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+h3{
+    font-size: 3.1rem;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10rem;
+    width: 100%;
+}
+
+.contact-me-title{
+    text-align: center;
+}
+
+.form-contact-me{
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.575);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    gap: 1rem;
+    text-align: flex-start;
+    border-bottom: 2px solid #c1e207;
+}
+
+.name-email {
+    display: flex;
+    gap: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-contact-me label {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+}
+
+.form-contact-me input,
+.form-contact-me textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-contact-me textarea {
+    resize: vertical;
+    resize: none; 
+    min-height: 10rem;
+}
+
+.form-contact-me button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-contact-me button:hover {
+    background: #0056b3;
+}
+
+/* RESPONSIVIDADE MODAL */
+@media (max-width: 1350px) {
+
+    /* video */
+    .modal-video video {
+        width: 350px;
+    }
+
+    .modal-video-buttons {
+        padding: 7rem 0 0 2rem;
+    }
+}
+
+@media (max-width:980px) {
+    .modal-info-project {
+        height: 70%;
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .modal-video-buttons {
+        padding: 0;
+    }
+
+    .modal-video {
+        display: flex;
+        justify-content: center;
+    }
+
+    .modal-title h2 {
+        margin: 0;
+    }
+}
+
+@media (max-width:585px) {
+    .name-email {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-projects {
+        width: 30rem;
+    }
+
+    .modal-info-project{
+        overflow: scroll;
+        max-height: 70vh;
+        overflow-x: hidden;
+    }
+
+    .modal-body {
+        flex-direction: column;
+        justify-content: center;      
+    }
+
+    .modal-video video {
+        width: 250px;
+    }
+}

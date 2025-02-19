@@ -1,0 +1,37 @@
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-image: url('./img/fundo.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real da sua imagem */
+  background-size: cover; /* Isso faz com que a imagem cubra todo o fundo */
+  background-position: center; /* Isso centraliza a imagem */
+  
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* Demonstração de uma barra de rolagem personalizada
+  * (não será visível ao menos que a largura/altura seja especificada) */
+::-webkit-scrollbar {
+  width: 1rem;
+  height: .5rem;
+  background-color: #aaa; /* ou que isso seja adicionado ao "caminho" da barra */
+}
+
+/* Adiciona a barra arrastável */
+::-webkit-scrollbar-thumb {
+    background: #c1e207;
+    width: 2rem;
+}
+
+input, textarea {
+  outline: none;
+}

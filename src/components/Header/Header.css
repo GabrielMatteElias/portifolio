@@ -1,0 +1,14 @@
+.header {
+    background-color: rgba(0, 0, 0, 0.801);
+    height: 5rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.63);
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    width: 100%;
+}
